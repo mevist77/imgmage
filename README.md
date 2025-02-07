@@ -1,6 +1,4 @@
-# imgmage
-# AI image generation tool for AI-first design engineers
-
+# Cursor Image Generation API
 
 A simple API for generating AI images with consistent styles. Send a prompt, get back an image URL.
 In order to use this API, you need to have a private API key - include it in the request URL.
@@ -14,7 +12,11 @@ Only choose one of the available style presets below.
 
 
 ## Available Style Presets
-- `basic` - Default image generation preset with 1792x2368 resolution
+- `basic` - Default image generation preset with 4:3 aspect ratio
+- `emoji` - Cute and playful emoji-style illustrations with bold colors and flat design, 4:3 aspect ratio
+- `minimalist` - Clean minimalist designs with simple shapes and solid colors, 1:1 aspect ratio
+- `schnell` - Fast image generation with 1:1 aspect ratio
+- `schnell-emoji` - Fast emoji-style generation with 1:1 aspect ratio
 
 ## Example Request
 http://localhost:8000/api/v1/image/your_api_key/basic/pixel-art-illustration-of-a-cat
